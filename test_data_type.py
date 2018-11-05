@@ -55,3 +55,21 @@ print('a is c ', a is c)
 
 name = 'Chenye Ding'
 print(name.lower())
+
+# max 取map中的最大值，按k或v排序
+# 先zip 将kv对组成元组，然后取最大
+
+calls = {'134':253, '189':103, '152':80}
+print(calls)
+print(calls.keys())
+print(calls.values())
+for k,v in zip(calls.keys(), calls.values()):
+    print('{}>>{}'.format(k, v))
+order_by_k = max(zip(calls.keys(), calls.values()))
+print('max of k={}>>{}'.format(*order_by_k))
+
+for v,k in zip(calls.values(), calls.keys()):
+    print('{}>>{}'.format(v, k))
+order_by_v = max(zip(calls.values(), calls.keys()))
+print('max of v={}>>{}'.format(*order_by_v))
+
