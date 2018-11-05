@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78b9d544-eb88-4124-aff5-797883db6d0e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/test_data_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_data_type.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udacity/calling_stat/Task3.py" beforeDir="false" afterPath="$PROJECT_DIR$/udacity/calling_stat/Task3.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +17,7 @@
     <SUITE FILE_PATH="coverage/bd_python$Task2.coverage" NAME="Task2 Coverage Results" MODIFIED="1541428919000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/udacity/calling_stat" />
     <SUITE FILE_PATH="coverage/bd_python$test_data_type.coverage" NAME="test_data_type Coverage Results" MODIFIED="1541430145402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/bd_python$Task0.coverage" NAME="Task0 Coverage Results" MODIFIED="1541428925674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/udacity/calling_stat" />
-    <SUITE FILE_PATH="coverage/bd_python$Task3.coverage" NAME="Task3 Coverage Results" MODIFIED="1541428915314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/udacity/calling_stat" />
+    <SUITE FILE_PATH="coverage/bd_python$Task3.coverage" NAME="Task3 Coverage Results" MODIFIED="1541461543195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/udacity/calling_stat" />
     <SUITE FILE_PATH="coverage/bd_python$test_controll_loop.coverage" NAME="test_controll_loop Coverage Results" MODIFIED="1541238624940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/bd_python$test_function.coverage" NAME="test_function Coverage Results" MODIFIED="1541324422919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/bd_python$handle_devide_by0.coverage" NAME="handle_devide_by0 Coverage Results" MODIFIED="1541322054026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -36,44 +36,57 @@
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="2" />
-          <entry key="py" value="23" />
+          <entry key="py" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="23" />
+          <entry key="Python" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="19" />
-          <entry key="py" value="6451" />
+          <entry key="py" value="6455" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="6451" />
+          <entry key="Python" value="6455" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_data_type.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="653">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="786">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/udacity/calling_stat/Task3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="526">
+              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+              <folding>
+                <marker date="1541461539127" expanded="true" signature="818:820" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,8 +124,8 @@
         <option value="$PROJECT_DIR$/udacity/calling_stat/Task4.py" />
         <option value="$PROJECT_DIR$/udacity/calling_stat/Task0.py" />
         <option value="$PROJECT_DIR$/udacity/calling_stat/Task2.py" />
-        <option value="$PROJECT_DIR$/udacity/calling_stat/Task3.py" />
         <option value="$PROJECT_DIR$/test_data_type.py" />
+        <option value="$PROJECT_DIR$/udacity/calling_stat/Task3.py" />
       </list>
     </option>
   </component>
@@ -134,7 +147,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,6 +169,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -181,7 +194,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_data_type">
+  <component name="RunManager" selected="Python.Task3">
     <configuration name="Task0" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bd-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -301,11 +314,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Task3" />
         <item itemvalue="Python.test_data_type" />
         <item itemvalue="Python.Task0" />
         <item itemvalue="Python.Task1" />
         <item itemvalue="Python.Task2" />
-        <item itemvalue="Python.Task3" />
       </list>
     </recent_temporary>
   </component>
@@ -326,12 +339,12 @@
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12924151" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13023952" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2670103" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2670103" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -415,9 +428,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="45" column="64" lean-forward="true" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
-          <folding>
-            <marker date="1541324563689" expanded="true" signature="708:713" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -435,16 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/udacity/calling_stat/Task3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
-          <folding>
-            <marker date="1541428772038" expanded="true" signature="818:820" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/udacity/calling_stat/Task2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -456,10 +456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <marker date="1541342280135" expanded="true" signature="357:358" ph="..." />
-            <marker date="1541342280135" expanded="true" signature="377:378" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -472,8 +468,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_data_type.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="786">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/udacity/calling_stat/Task3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <marker date="1541461539127" expanded="true" signature="818:820" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

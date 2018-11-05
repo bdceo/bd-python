@@ -62,4 +62,4 @@ for call in calls:
     if call_out.startswith('(080)'):
         ban_call_out += 1
 print('"<{:.2f}> percent of calls from fixed lines in Bangalore are calls\nto other fixed lines in Bangalore."'
-      .format(ban_call_count/ban_call_out))
+      .format(ban_call_count/ban_call_out*100))
