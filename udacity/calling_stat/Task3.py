@@ -56,10 +56,11 @@ for call in sorted(ban_calls):
 ban_call_count = 0
 ban_call_out = 0
 for call in calls:
-    call_in, call_out = call[0], call[1]
+    call_out, call_in = call[0], call[1]
     if call_in.startswith('(080)') and call_out.startswith('(080)'):
         ban_call_count += 1
     if call_out.startswith('(080)'):
         ban_call_out += 1
-print('"<{:.2f}> percent of calls from fixed lines in Bangalore are calls\nto other fixed lines in Bangalore."'
-      .format(ban_call_count/ban_call_out*100))
+percentage = ban_call_count/ban_call_out
+print('"<{:.2%}> percent of calls from fixed lines in Bangalore are calls\nto other fixed lines in Bangalore."'
+      .format(percentage))
