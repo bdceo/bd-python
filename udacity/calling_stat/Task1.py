@@ -28,3 +28,14 @@ for call in calls:
     diff_phones.add(call[1])
 
 print('"There are <{}> different telephone numbers in the records."'.format(len(diff_phones)))
+
+# 将一行3列的列表，解压缩到三个元组
+texts_transposed = list(zip(*texts))
+for tt in texts_transposed:
+    print(tt)
+print('-----')
+calls_transposed = list(zip(*calls))
+for cc in calls_transposed:
+    print(cc)
+size = len(set(texts_transposed[0]) | set(texts_transposed[1]) | set(calls_transposed[0]) | set(calls_transposed[1]))
+print(size)

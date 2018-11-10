@@ -29,16 +29,37 @@ for call in calls:
     if phone_dict.get(tel_in) is None:
         phone_dict[tel_in] = int(tel_sec)
     else:
-        phone_dict[tel_in] = int(phone_dict.get(tel_in)) + int(tel_sec)
-    if phone_dict.get(tel_out) is None:
+        # phone_dict[tel_in] = int(phone_dict.get(tel_in)) + int(tel_sec)
+        phone_dict[tel_in] += int(tel_sec)
+    # if phone_dict.get(tel_out) is None:
+    if tel_out not in phone_dict:
         phone_dict[tel_out] = int(tel_sec)
     else:
-        phone_dict[tel_out] = int(phone_dict.get(tel_out)) + int(tel_sec)
+        # phone_dict[tel_out] = int(phone_dict.get(tel_out)) + int(tel_sec)
+        phone_dict[tel_out] += int(tel_sec)
 
+# 借助max函数，比sorted函数更简单
 longest_call = max(zip(phone_dict.values(), phone_dict.keys()))
 print('"<{}> spent the longest time, <{}> seconds, on the phone during\n September 2016.".'
       .format(*longest_call))
 
+# 排序函数，指定key-排序字段，适用于字典数据类型
 # phone_dict = sorted(phone_dict.items(), key=lambda item: item[1], reverse=True)
 # print('"<{}> spent the longest time, <{}> seconds, on the phone during\n September 2016.".'
 #      .format(longest_call[0], phone_dict[0][1]))
+
+
+# 抽取函数处理，字典的初始化
+def dict_add(adict, k, v):
+    if k in adict:
+        adict[k] += v
+    else:
+        adict[k] = v
+
+
+test_dict = {}
+for call in calls:
+    dict_add(test_dict, call[0], int(call[3]))
+    dict_add(test_dict, call[1], int(call[3]))
+longest_call = max(test_dict, key=test_dict.get)
+print(longest_call, test_dict[longest_call])
