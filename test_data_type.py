@@ -22,7 +22,7 @@ print('x={}, y={}, z={}'.format(x, y, z))
 nums = [2, 3, 4, 2, 1, 3, 1, 4, 5, 6, 7, 3, 2, 1, 1]
 print(nums)
 num_set = set(nums)
-print('num_set=', num_set)
+print('num_set=', num_set, ' size=', len(num_set))
 print('7 in num_set: {}'.format(7 in num_set))
 print(num_set.pop())
 num_set2 = {4, 5, 9, 11}
