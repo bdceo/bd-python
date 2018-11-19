@@ -105,5 +105,6 @@ venv.bak/
 
 # idea
 .idea/
+/.idea/
 **/*.iml
 **/.idea/**/*
