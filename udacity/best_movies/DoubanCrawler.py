@@ -1,4 +1,5 @@
 import requests
+from bs4 import BeautifulSoup
 import expanddouban
 
 
@@ -25,8 +26,8 @@ def get_movie_url(category, location):
 
 
 # 任务2: 获取电影页面 HTML
-movie_url = get_movie_url("剧情", "美国")
-# movie_html = expanddouban.get_html(movie_url, True)
+test_url = get_movie_url("剧情", "美国")
+# test_html = expanddouban.get_html(test_url)
 
 
 # 任务3: 定义电影类
@@ -40,11 +41,22 @@ movie = Movie(movie_name, movie_rate, movie_location, movie_category, movie_info
 
 
 # 任务4: 获得豆瓣电影的信息
+def get_movies(category='剧情', location='美国'):
+    movies = []
+    movie_url = get_movie_url(category, location);
+    print('抓取电影页面，url=', movie_url)
+    movie_html = expanddouban.get_html(movie_url, True)
+    soup = BeautifulSoup(movie_html, 'html.parser')
+    print('页面，title=', soup.title)
+
+    return movies
 
 
+get_movies()
 
 
 # 任务5: 构造电影信息数据表
+
 
 # 任务6: 统计电影数据
 
