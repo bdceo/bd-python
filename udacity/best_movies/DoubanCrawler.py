@@ -1,7 +1,5 @@
 import csv
-import pandas as pd
 import codecs
-import requests
 from bs4 import BeautifulSoup
 import expanddouban
 
@@ -84,33 +82,43 @@ def get_all_location():
 
 
 def get_all_movie(cats, locates):
-    movie_list = []
+    movies = []
     for cat in cats:
         for loc in locates:
-            movie_list.extend(get_movies(cat, loc))
-    return movie_list
+            movies.extend(get_movies(cat, loc))
+    return movies
+
+
+categories = ['剧情', '喜剧', '爱情']
+locations = get_all_location()
 
 
 def collect_movie():
-    categories = ['剧情', '喜剧', '爱情']
-    locations = get_all_location()
-    movie_list = get_all_movie(categories, locations)
+    movies = get_all_movie(categories, locations)
     print("电影信息采集完毕.")
 
     with codecs.open('movies.csv', 'w', 'utf-8') as f:
         csv_writer = csv.writer(f)
-        for movie in movie_list:
+        for movie in movies:
             csv_writer.writerow(movie.gen_csv_row())
         print("已输出到csv.")
 
 # collect_movie()
 
-
+# categories = ['剧情', '喜剧', '爱情']
 # 任务6: 统计电影数据
 # 统计你所选取的每个电影类别中，数量排名前三的地区有哪些，分别占此类别电影总数的百分比为多少？
 with open('movies.csv', 'r') as f:
     reader = csv.reader(f)
     movie_list = list(reader)
     print(movie_list[:3])
+
+    cat_dict = {}
+    for movie in movie_list:
+        cat = movie[3]
+
+
+
+
 
 
