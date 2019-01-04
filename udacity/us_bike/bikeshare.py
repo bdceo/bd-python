@@ -2,9 +2,10 @@ import time
 import pandas as pd
 import numpy as np
 
-CITY_DATA = { 'chicago': 'chicago.csv',
+CITY_DATA = {'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
-              'washington': 'washington.csv' }
+              'washington': 'washington.csv'}
+
 
 def get_filters():
     """
@@ -16,14 +17,26 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    support_cities = ['chicago', 'new york city', 'washington']
+    city = input('Would you like to see data for Chicago, New York, or Washington?').lower()
+    while city not in support_cities:
+        print('Sorry! city not support :', city)
+        city = input('Would you like to see data for Chicago, New York, or Washington?').lower()
 
+    # get user input for month (all, january, february, ... , june)
+    month = input('Which month? all, january, february, ... , june?').lower()
+    support_months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december', 'all']
+    while month not in support_months:
+        print('Sorry! month not support :', month)
+        month = input('Which month? all, january, february, ... , june?').lower()
 
-    # TO DO: get user input for month (all, january, february, ... , june)
-
-
-    # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
-
+    # get user input for day of week (all, monday, tuesday, ... sunday)
+    day = input('Which day? all, monday, tuesday, ... sunday?').lower()
+    support_days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']
+    while day not in support_days:
+        print('Sorry! day not support:', day)
+        day = input('Which day? all, monday, tuesday, ... sunday?').lower()
 
     print('-'*40)
     return city, month, day
