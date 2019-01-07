@@ -6,7 +6,7 @@ print ('My name is ', name, ' and ', age, 'years old.')
 # gf = input('tell me your gf name: ')
 # print ('Hello:', gf)
 
-print ('1024*768=', 1024 * 768)
+print('1024*768=', 1024 * 768)
 
 # 元组，将相关信息存到一个容器中，例如：经纬度，xyz
 location = (1233.21, 32111.2)
