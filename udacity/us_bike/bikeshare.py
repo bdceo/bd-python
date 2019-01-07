@@ -1,9 +1,8 @@
 import time
 import pandas as pd
-import numpy as np
 
 CITY_DATA = {'chicago': 'chicago.csv',
-              'new york city': 'new_york_city.csv',
+              'new york': 'new_york_city.csv',
               'washington': 'washington.csv'}
 support_months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
 support_days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
@@ -20,7 +19,6 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    support_cities = ['chicago', 'new york city', 'washington']
     city = input('Would you like to see data for Chicago, New York, or Washington?').lower()
     while CITY_DATA.get(city) is None:
         print('Sorry! city not support :', city)
@@ -65,7 +63,6 @@ def load_data(city, month, day):
         day = support_days.index(day)
         df = df[df['dayofweek'] == day]
 
-    # print(df.head(3))
     return df
 
 
@@ -77,13 +74,13 @@ def time_stats(df):
 
     # display the most common month
     month = df['month'].mode()[0]
-    print('the most common month:', support_months[month-1])
+    print('the most common month:', support_months[month-1].title())
 
     # display the most common day of week
     day = df['dayofweek'].mode()[0]
-    print('the most common day of week:', support_days[day])
+    print('the most common day of week:', support_days[day].title())
 
-    # TO DO: display the most common start hour
+    # display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
     hour = df['hour'].mode()[0]
     print('the most common start hour:', hour)
@@ -106,7 +103,7 @@ def station_stats(df):
     end_station = df['End Station'].mode()[0]
     print('the most commonly used end station:', end_station)
 
-    # TO DO: display most frequent combination of start station and end station trip
+    # display most frequent combination of start station and end station trip
     df['Trip Line'] = 'from ' + df['Start Station'] + ' to ' + df['End Station']
     trip_line = df['Trip Line'].mode()[0]
     print('most frequent combination of start station and end station trip:', trip_line)
@@ -125,7 +122,7 @@ def trip_duration_stats(df):
     total = df['Trip Duration'].sum()
     print('total travel time(seconds):', total)
 
-    # TO DO: display mean travel time
+    # display mean travel time
     mean = df['Trip Duration'].mean()
     print('mean travel time(seconds):', mean)
 
