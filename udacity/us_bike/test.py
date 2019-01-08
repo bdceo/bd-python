@@ -13,7 +13,10 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv'}
 
-print(CITY_DATA.get(city))
+print('CITY_DATA.get(city)=', CITY_DATA.get(city))
+
+print('city in CITY_DATA=', (city in CITY_DATA))
+
 
 df = pd.read_csv(CITY_DATA.get(city))
 print(df.info())
