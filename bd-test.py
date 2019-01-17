@@ -7,11 +7,10 @@ print('a=', a, ', b=', b, ', c=', c)
 age = 30
 is_cn = (age>=18 and age<60)
 is_yon = not (age>=18 and age<60)
-print(is_cn)
-print(is_yon)
+print('is_cn=', is_cn)
+print('is_yon=', is_yon)
 
 # 字符串包含， 列表包含  in, not in
-
 si = 'bdceo' in 'my name is bdceo'
 
 lis = [1, 3, 4, 6, 7]
@@ -34,10 +33,9 @@ ai = [1,2,3]
 bi = [4,5,6]
 print(ai)
 print(bi)
+# 单纯的append不返回结果，但是会影响ai的数据集
 result_1 = ai.append(bi)
 result_2 = ai + bi
 print(result_1)
 print(result_2)
-
-
 

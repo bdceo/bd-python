@@ -5,6 +5,10 @@
 请修改下面的函数以处理该异常。如果在函数的第一行遇到该异常，应该输出警告消息并返回空列表。否则，应该运行函数的剩余代码。最后，该函数应该始终输出返回了多少组。
 '''
 
+# range 函数参考：http://www.runoob.com/python/python-func-range.html
+# range(start, stop[, step])
+
+
 def create_groups(items, num_groups):
     groups = []
     try:
