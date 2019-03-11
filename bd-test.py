@@ -39,3 +39,6 @@ result_2 = ai + bi
 print(result_1)
 print(result_2)
 
+s = "CidatyUcityda"
+print(s[-7] + s[2:4] + s[7:11])
+print(s[6] + s[-2] + s[3] + s[:2] + s[4:6])
